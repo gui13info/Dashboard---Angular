@@ -1,0 +1,16 @@
+<app-painel-simples titulo='Consultas' col='12'>
+    <table>
+        <thead>
+            <tr>
+                <th>Especialidade</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let consulta of consultas">
+                <td>{{consulta.especialidade}}</td>
+                <td>{{consulta.quantidade}}</td>
+            </tr>
+        </tbody>
+    </table>
+</app-painel-simples>
